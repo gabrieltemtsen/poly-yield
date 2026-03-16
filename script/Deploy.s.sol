@@ -56,16 +56,13 @@ contract DeployPolyYield is Script {
 
         vm.stopBroadcast();
 
-        // Write deployment to JSON
-        string memory json = string(abi.encodePacked(
-            '{"MockUSDC":"', vm.toString(address(usdc)),
-            '","PolyYieldVault":"', vm.toString(address(vault)),
-            '","BifrostStrategy":"', vm.toString(address(bifrost)),
-            '","AcalaStrategy":"', vm.toString(address(acala)),
-            '","HydraDXStrategy":"', vm.toString(address(hydra)),
-            '","deployer":"', vm.toString(deployer), '"}'
-        ));
-        vm.writeFile("deployments/latest.json", json);
-        console.log("Saved to deployments/latest.json");
+        // Log all addresses for manual recording
+        console.log("=== DEPLOYMENT SUMMARY ===");
+        console.log("MockUSDC:       ", address(usdc));
+        console.log("PolyYieldVault: ", address(vault));
+        console.log("BifrostStrategy:", address(bifrost));
+        console.log("AcalaStrategy:  ", address(acala));
+        console.log("HydraDXStrategy:", address(hydra));
+        console.log("Deployer:       ", deployer);
     }
 }

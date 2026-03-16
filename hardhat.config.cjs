@@ -13,8 +13,8 @@ module.exports = {
   },
   networks: {
     polkadotHub: {
-      url: process.env.POLKADOT_HUB_RPC || "https://testnet-passet-hub-eth-rpc.polkadot.io",
-      chainId: 420420421,
+      url: process.env.POLKADOT_HUB_RPC || "https://eth-rpc-testnet.polkadot.io/",
+      chainId: 420420417,
       accounts: [PRIVATE_KEY],
     },
     hardhat: {

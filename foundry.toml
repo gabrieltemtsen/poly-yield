@@ -7,4 +7,4 @@ remappings = [
 ]
 
 [rpc_endpoints]
-polkadotHub = "${POLKADOT_HUB_RPC}"
+polkadotHub = "https://eth-rpc-testnet.polkadot.io/"
