@@ -30,7 +30,7 @@ export default function Home() {
               Contract ↗
             </a>
             <span className="text-xs text-gray-600 bg-gray-800 px-2 py-1 rounded-full hidden md:block">
-              Polkadot Hub Testnet
+              {DEPLOYMENT.networkLabel}
             </span>
             <WalletButton />
           </div>
@@ -64,12 +64,12 @@ export default function Home() {
                 GitHub ↗
               </a>
               <a
-                href="https://dorahacks.io/hackathon/polkadot-solidity-hackathon/detail"
+                href={DEPLOYMENT.explorer}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 border border-pink-500/40 text-pink-400 hover:bg-pink-500/10 text-sm rounded-lg transition-colors"
               >
-                DoraHacks Submission
+                Explorer ↗
               </a>
             </div>
           </div>
@@ -120,13 +120,10 @@ export default function Home() {
 
         {/* Footer */}
         <div className="text-center text-xs text-gray-600 py-4">
-          Built for the{" "}
-          <a href="https://dorahacks.io/hackathon/polkadot-solidity-hackathon/detail" className="text-pink-500 hover:underline" target="_blank">
-            Polkadot Solidity Hackathon 2026
-          </a>{" "}
-          · Vault: <a href={`${DEPLOYMENT.explorer}/address/${DEPLOYMENT.contracts.PolyYieldVault}`} className="font-mono hover:text-gray-400 transition-colors" target="_blank">
+          Vault: <a href={`${DEPLOYMENT.explorer}/address/${DEPLOYMENT.contracts.PolyYieldVault}`} className="font-mono hover:text-gray-400 transition-colors" target="_blank">
             {DEPLOYMENT.contracts.PolyYieldVault.slice(0, 10)}...
           </a>
+          {" "}· Network: <span className="text-gray-500">{DEPLOYMENT.networkLabel}</span>
         </div>
       </main>
     </div>

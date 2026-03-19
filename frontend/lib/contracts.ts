@@ -1,5 +1,7 @@
 export const DEPLOYMENT = {
-  network: "Polkadot Hub Testnet",
+  networkLabel: "Polkadot Hub", // UI label (keep mainnet-standard)
+  network: "polkadot-hub",      // internal key
+
   chainId: 420420417,
   rpc: "https://eth-rpc-testnet.polkadot.io/",
   explorer: "https://blockscout-testnet.polkadot.io",
