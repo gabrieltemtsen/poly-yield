@@ -7,7 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "PolyYield ⚡ | AI-Powered Cross-Parachain Yield",
-  description: "Automatically route your stablecoins to the highest-yielding strategy across Polkadot parachains. Powered by Gemini AI.",
+  description: "Automatically route your stablecoins to the highest-yielding strategy across multiple yield venues. Powered by Gemini AI.",
+  applicationName: "PolyYield",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

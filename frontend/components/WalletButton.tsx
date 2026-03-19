@@ -29,7 +29,7 @@ export function WalletButton() {
         onClick={() => switchChain({ chainId: polkadotHubTestnet.id })}
         className="px-4 py-2 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold rounded-lg transition-colors"
       >
-        Switch to Polkadot Hub Testnet
+        Switch Network
       </button>
     );
   }

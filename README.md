@@ -59,14 +59,14 @@ forge script script/Deploy.s.sol --rpc-url polkadotHub --broadcast --verify
 cd oracle && npm install && npm start
 ```
 
-## Polkadot Hackathon
+## Mainnet-Ready Design
 
-Built for the **Polkadot Solidity Hackathon 2026** — Track 1: EVM Smart Contracts (DeFi & Stablecoin-enabled dApps).
+PolyYield is designed to be deployable to **Polkadot Hub EVM mainnet** (and other EVM-compatible networks).
 
-**Why Polkadot?**
-- Polkadot Hub is EVM-compatible — deploy Solidity, no chain migration
-- XCM enables future cross-parachain fund movement natively
-- Multiple DeFi protocols (Bifrost, Acala, HydraDX) = real yield diversity
+**Why Polkadot Hub?**
+- EVM-compatible — deploy Solidity, no chain migration
+- Path to cross-parachain fund movement via XCM integrations
+- Multiple DeFi venues (Bifrost, Acala, HydraDX) = real yield diversity
 
 ## License
 
